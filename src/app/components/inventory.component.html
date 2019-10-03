@@ -1,5 +1,3 @@
-
-
 <div class="inv-line" *ngFor="let item of inventory; let i = index;"
     (click)="selectItem(item.itemId, i)">
     <img [src]="item.image" class="inv-image">

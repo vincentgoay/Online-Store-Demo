@@ -16,7 +16,7 @@ export class AppComponent {
     
     if (i) {
       i.quantity++;
-
+      
     } else {
       const newLineItem: LineItem = {
         quantity: 1,

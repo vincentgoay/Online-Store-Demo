@@ -1,1 +1,16 @@
-<p>cart works!</p>
+<div class="inv-line" *ngFor="let item of inventory; let i = index;"
+    (click)="selectItem(item.itemId, i)">
+    <img [src]="item.image" class="inv-image">
+    <div class="inv-detail">
+        <h3>{{ item.name }}</h3>
+        <p>S${{ item.unitPrice }}</p>
+    </div>
+</div>
+
+<h1>My Cart</h1>
+
+<div *ngFor="let i of lineItems">
+    <h3>{{ i.sku.name }}</h3>
+    <h3>{{ i.quantity }}</h3>
+</div>
+
