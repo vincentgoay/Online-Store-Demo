@@ -1,0 +1,29 @@
+.inv-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid gray
+}
+
+.inv-line:hover {
+    background-color: lightblue;
+}
+
+.inv-image {
+    height: 10vh;
+    width: auto;
+}
+
+.inv-detail {
+    margin-left: 2vw;
+}
+
+.grey-background {
+    background-color: lightgrey;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+}
